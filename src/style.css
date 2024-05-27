@@ -1,23 +1,29 @@
+/* Definición de variables CSS para colores y gradientes en el elemento <html> */
 html {
+  /* Color de fondo para secciones, usando un gradiente lineal */
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
   );
 
+  /* Gradiente para imágenes */
   --image-gradient: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  /* Color importante para el texto */
+  --imp-text-color: blue;
 }
 
+/* Estilo para elementos con la clase .purple, utilizando la variable de color de texto importante */
 .purple {
   color: var(--imp-text-color) !important;
 }
 
+/* Estilo para botones en estado de foco, eliminando la sombra */
 button:focus {
   box-shadow: none !important;
 }
@@ -25,204 +31,239 @@ button:focus {
 /* --------- */
 /*  Preloader */
 /* --------- */
+
+/* Estilo para el preloader, que cubre toda la pantalla */
 #preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
+  z-index: 999999; /* Asegura que el preloader esté por encima de otros elementos */
+  background-color: #06022b;
+  background-image: url(./Assets/preloader.svg); /* Imagen del preloader */
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; /* Centra la imagen del preloader */
 }
 
+/* Estilo para ocultar el preloader */
 #preloader-none {
   opacity: 0;
 }
 
+/* Estilo para desactivar el scroll */
 #no-scroll {
   overflow: hidden;
-  height: 100vh;
+  height: 100vh; /* Asegura que la página no se desplace */
 }
 
 /* --------- */
-/*Scrollbar   */
+/* Scrollbar  */
 /* --------- */
 
+/* Estilo para la barra de desplazamiento en navegadores Webkit */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 7px; /* Ancho de la barra de desplazamiento */
 }
 
-/* Track */
+/* Estilo para la pista de la barra de desplazamiento */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #06022b;
 }
 
-/* Handle */
+/* Estilo para el "thumb" de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
-  border-radius: 12px;
+  background: blue; /* Color del "thumb" */
+  border-radius: 12px; /* Bordes redondeados */
 }
 
-/* Handle on hover */
+/* Estilo para el "thumb" de la barra de desplazamiento al pasar el ratón por encima */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(235, 130, 130, 0.911);
+  background: rgba(12, 211, 12, 0.911); /* Color del "thumb" al pasar el ratón */
   border-radius: 12px;
 }
 
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+
+/* Estilo para la barra de navegación cuando está en estado "sticky" */
 .sticky {
   background-color: #1b1a2ea9 !important;
-  transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  transition: all 0.3s ease-out 0s !important; /* Transición suave */
+  box-shadow: 0px 10px 10px 0px blue; /* Sombra */
+  backdrop-filter: blur(15px) !important; /* Efecto de desenfoque */
 }
 
+/* Estilo para la barra de navegación */
 .navbar {
-  position: fixed !important;
-  transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
-  font-size: 1.2rem !important;
+  position: fixed !important; /* Fija la barra de navegación en la parte superior */
+  transition: all 0.3s ease-out 0s !important; /* Transición suave */
+  padding: 0.3rem 2rem !important; /* Relleno */
+  font-size: 1.2rem !important; /* Tamaño de la fuente */
 }
 
+/* Estilo para el botón de alternancia de la barra de navegación */
 .navbar-toggler {
   position: relative !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
+  background-color: transparent !important; /* Fondo transparente */
+  border-color: transparent !important; /* Borde transparente */
 }
-
+/* Estilo para el span dentro del botón de alternancia de la barra de navegación */
 .navbar-toggler span {
-  display: block !important;
-  background-color: #be50f4 !important;
-  height: 4px !important;
-  width: 27px !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  transform: rotate(0deg) !important;
-  left: 0 !important;
-  opacity: 1 !important;
+  display: block !important; /* Muestra el span como un bloque */
+  background-color: blue !important; /* Color de fondo del span */
+  height: 4px !important; /* Altura del span */
+  width: 27px !important; /* Anchura del span */
+  margin-top: 5px !important; /* Margen superior del span */
+  margin-bottom: 5px !important; /* Margen inferior del span */
+  transform: rotate(0deg) !important; /* Rotación inicial del span */
+  left: 0 !important; /* Alinea el span a la izquierda */
+  opacity: 1 !important; /* Opacidad del span */
 }
 
+/* Elimina el borde de enfoque en el botón de alternancia de la barra de navegación cuando está enfocado o activo */
 .navbar-toggler:focus,
 .navbar-toggler:active {
   outline: 0 !important;
 }
 
+/* Transición para los spans primero y tercero dentro del botón de alternancia */
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.35s ease-in-out !important; /* Transición de transformación */
 }
 
+/* Estilo para el primer span cuando el botón de alternancia no está colapsado */
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(135deg) !important;
-  opacity: 0.9 !important;
+  position: absolute !important; /* Posiciona absolutamente el span */
+  left: 12px !important; /* Alinea el span a la izquierda */
+  top: 10px !important; /* Alinea el span a la parte superior */
+  transform: rotate(135deg) !important; /* Rota el span 135 grados */
+  opacity: 0.9 !important; /* Opacidad del span */
 }
 
+/* Estilo para el segundo span cuando el botón de alternancia no está colapsado */
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 12px !important;
-  visibility: hidden !important;
-  background-color: transparent !important;
+  height: 12px !important; /* Ajusta la altura del span */
+  visibility: hidden !important; /* Oculta el span */
+  background-color: transparent !important; /* Hace el fondo transparente */
 }
 
+/* Estilo para el tercer span cuando el botón de alternancia no está colapsado */
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(-135deg) !important;
-  opacity: 0.9 !important;
+  position: absolute !important; /* Posiciona absolutamente el span */
+  left: 12px !important; /* Alinea el span a la izquierda */
+  top: 10px !important; /* Alinea el span a la parte superior */
+  transform: rotate(-135deg) !important; /* Rota el span -135 grados */
+  opacity: 0.9 !important; /* Opacidad del span */
 }
 
+/* Estilo para la barra de navegación en pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    padding: 1rem 2rem !important; /* Relleno de la barra de navegación */
+    font-size: 1.4rem !important; /* Tamaño de la fuente */
+    background-color: #181a27 !important; /* Color de fondo */
   }
   .navbar-nav .nav-item a::after {
-    display: none !important;
+    display: none !important; /* Oculta el pseudo-elemento después de los enlaces */
   }
 }
+
+/* Estilo para la marca de la barra de navegación */
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: rgb(250, 250, 250) !important; /* Color del texto */
 }
 
+/* Estilo para el logo */
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2.5em !important; /* Altura del logo */
+  width: 2.5em !important; /* Anchura del logo */
 }
 
+/* Estilo para los enlaces de navegación */
 .navbar-nav .nav-link {
-  color: white !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  color: white !important; /* Color del texto */
+  padding-right: 1rem !important; /* Relleno derecho */
+  padding-left: 1rem !important; /* Relleno izquierdo */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
+/* Estilo general para los enlaces */
 .nav-link {
-  padding: 0.8rem 1rem !important;
+  padding: 0.8rem 1rem !important; /* Relleno */
 }
 
+/* Estilo para los enlaces en pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .nav-link {
-    padding: 0.7rem 1rem !important;
+    padding: 0.7rem 1rem !important; /* Relleno */
   }
 }
 
+/* Estilo para los elementos de la navegación */
 .navbar-nav .nav-item {
-  position: relative;
-  margin-left: 20px;
+  position: relative; /* Posición relativa */
+  margin-left: 20px; /* Margen izquierdo */
 }
 
+/* Estilo para los enlaces dentro de los elementos de la navegación */
 .navbar-nav .nav-item a {
-  font-weight: 400;
-  transition: all 0.3s ease-out 0s;
-  position: relative;
-  z-index: 1;
+  font-weight: 400; /* Peso de la fuente */
+  transition: all 0.3s ease-out 0s; /* Transición suave */
+  position: relative; /* Posición relativa */
+  z-index: 1; /* Índice Z */
 }
 
+/* Estilo para el pseudo-elemento después de los enlaces */
 .navbar-nav .nav-item a::after {
-  content: "";
-  position: relative;
-  display: block;
-  height: 5px;
-  width: 0;
-  border-radius: 16px;
-  background: #c95bf5;
-  bottom: 1px;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s ease-out 0s;
+  content: ""; /* Contenido vacío */
+  position: relative; /* Posición relativa */
+  display: block; /* Muestra como bloque */
+  height: 5px; /* Altura */
+  width: 0; /* Anchura inicial */
+  border-radius: 16px; /* Bordes redondeados */
+  background: blue; /* Color de fondo */
+  bottom: 1px; /* Posición inferior */
+  left: 0; /* Alinea a la izquierda */
+  z-index: -1; /* Índice Z */
+  transition: all 0.3s ease-out 0s; /* Transición suave */
 }
 
+/* Estilo para el pseudo-elemento después de los enlaces al pasar el ratón por encima 
 .navbar-nav .nav-item a:hover::after {
-  width: 100%;
+  width: 100%;  Anchura completa rgba(12, 211, 12, 0.911);
+}*/
+
+/* Estilo para los elementos de la navegación al pasar el ratón por encima */
+.navbar-nav .nav-item:hover .nav-link {
+  transform: scale(1.05); /* Agrandar un poco */
+  box-shadow: 0 0 10px rgba(12, 211, 12, 0.911); /* Sombra */
+  border-radius: 10px; /* Bordes redondeados */
 }
 
 /* --------- */
 /* Home section */
 /* --------- */
+
+/* Estilo para el elemento con la clase .wave */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
+  animation-name: wave-animation; /* Nombre de la animación definida abajo con @keyframes */
+  animation-duration: 2.1s; /* Duración de la animación */
+  animation-iteration-count: infinite; /* La animación se repite indefinidamente */
+  transform-origin: 70% 70%; /* Punto de origen de la transformación */
+  display: inline-block; /* Muestra el elemento en línea como un bloque */
 }
 
+/* Definición de la animación wave-animation */
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  } /* El siguiente grupo de valores se puede ajustar para cambiar la intensidad del movimiento */
   20% {
     transform: rotate(-8deg);
   }
@@ -237,507 +278,606 @@ button:focus {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  } /* Reinicia para la segunda mitad de la animación */
   100% {
     transform: rotate(0deg);
   }
 }
+
+/* Estilo para el elemento con el id #tsparticles */
 #tsparticles {
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
+  position: fixed !important; /* Posición fija */
+  background-repeat: no-repeat !important; /* Sin repetición de fondo */
+  background-size: cover !important; /* El fondo cubre todo el contenedor */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
 }
 
+/* Estilo para el encabezado de la sección de inicio */
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 80px !important; /* Relleno superior */
 }
 
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
+  background-image: var(--image-gradient), url(./Assets/fondo.jpg);
+  background-position: center; /* Ajusta la posición de la imagen de fondo al centro */
   background-repeat: no-repeat;
+  background-size: 100% auto; /* Ancho al 100% y altura automática */
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
 
+body {
+  background-image: url('./Assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo para el contenido de la sección de inicio */
 .home-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
-  text-align: left;
+  padding: 9rem 0 2rem !important; /* Relleno superior e inferior */
+  color: whitesmoke; /* Color del texto */
+  text-align: left; /* Alineación del texto a la izquierda */
 }
 
+/* Estilo para el encabezado */
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 2.4em !important; /* Tamaño de la fuente */
+  padding-left: 50px !important; /* Relleno izquierdo */
 }
 
+/* Estilo para el nombre en el encabezado */
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 2.5em !important; /* Tamaño de la fuente */
+  padding-left: 45px !important; /* Relleno izquierdo */
 }
 
+/* Estilo para el nombre principal */
 .main-name {
-  color: #cd5ff8;
+  color: blue; /* Color del texto */
 }
 
+/* Estilo para el wrapper del Typewriter */
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 600 !important;
-}
-.Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
+  font-size: 2.2em !important; /* Tamaño de la fuente */
+  color: blue !important; /* Color del texto */
+  font-weight: 600 !important; /* Grosor de la fuente */
 }
 
+/* Estilo para el cursor del Typewriter */
+.Typewriter__cursor {
+  font-size: 2.4em !important; /* Tamaño de la fuente */
+  color: blue !important; /* Color del cursor */
+}
+
+/* Estilo responsivo para pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
+    font-size: 1.4em !important; /* Tamaño de la fuente */
+    font-weight: 500 !important; /* Grosor de la fuente */
+    position: absolute !important; /* Posición absoluta */
   }
   .Typewriter__cursor {
-    display: none !important;
+    display: none !important; /* Oculta el cursor */
   }
 }
 
+/* Estilo para el elemento con la clase .myAvtar */
 .myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
+  justify-content: center !important; /* Justificación centrada */
+  padding-top: 9em !important; /* Relleno superior */
 }
 
+/* Estilo responsivo para .myAvtar en pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
+    padding-top: 2em !important; /* Relleno superior reducido */
+    padding-bottom: 2em !important; /* Relleno inferior */
   }
 }
 
+/* Estilo para la sección sobre el inicio */
 .home-about-section {
-  position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  position: relative; /* Posición relativa */
+  padding-bottom: 70px !important; /* Relleno inferior */
+  padding-top: 70px !important; /* Relleno superior */
 }
 
+/* Estilo para la descripción de la sección sobre el inicio */
 .home-about-description {
-  color: white !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
-  text-align: center;
+  color: white !important; /* Color del texto */
+  padding-top: 100px !important; /* Relleno superior */
+  padding-bottom: 20px !important; /* Relleno inferior */
+  text-align: center; /* Alineación centrada del texto */
 }
 
+/* Estilo para el cuerpo de la sección sobre el inicio */
 .home-about-body {
-  padding-top: 50px;
-  font-size: 1.2em !important;
-  text-align: left;
+  padding-top: 50px; /* Relleno superior */
+  font-size: 1.2em !important; /* Tamaño de la fuente */
+  text-align: left; /* Alineación del texto a la izquierda */
 }
 
+/* Estilo para la sección de redes sociales de la sección sobre el inicio */
 .home-about-social {
-  text-align: center !important;
-  padding-top: 25px;
-  color: white !important;
+  text-align: center !important; /* Alineación centrada */
+  padding-top: 25px; /* Relleno superior */
+  color: white !important; /* Color del texto */
 }
 
+/* Estilo para los enlaces de redes sociales en la sección sobre el inicio */
 .home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  position: relative !important;
-  padding-inline-start: 0 !important;
+  justify-content: center !important; /* Justificación centrada */
+  padding-top: 15px !important; /* Relleno superior */
+  display: inline-block !important; /* Muestra en línea como bloque */
+  position: relative !important; /* Posición relativa */
+  padding-inline-start: 0 !important; /* Sin relleno de inicio de línea */
 }
 
+/* Estilo para los íconos de redes sociales */
 .home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
-  border-radius: 50% !important;
-  transition: 0.5s !important;
+  position: relative !important; /* Posición relativa */
+  display: inline-block !important; /* Muestra en línea como bloque */
+  width: 40px !important; /* Ancho */
+  height: 40px !important; /* Altura */
+  text-align: center !important; /* Alineación centrada del texto */
+  font-size: 1.2em !important; /* Tamaño de la fuente */
+  line-height: 2em !important; /* Altura de la línea */
+  background: rgba(255, 255, 255, 0.972) !important; /* Color de fondo */
+  border-radius: 50% !important; /* Bordes redondeados */
+  transition: 0.5s !important; /* Transición */
 }
 
+/* Estilo para el pseudo-elemento antes del ícono de redes sociales */
 .home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
+  content: ""; /* Contenido vacío */
+  position: absolute; /* Posición absoluta */
+  top: 0; /* Alineación superior */
+  left: 0; /* Alineación izquierda */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  border-radius: 50%; /* Bordes redondeados */
+  background: rgba(12, 211, 12, 0.911); /* Color de fondo */
+  transition: 0.5s; /* Transición */
+  transform: scale(0.9); /* Escala inicial */
+  z-index: -1; /* Índice Z negativo */
 }
 
+/* Estilo para el pseudo-elemento antes del ícono de redes sociales al pasar el ratón por encima */
 .home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  transform: scale(1.1); /* Escala aumentada */
+  box-shadow: 0 0 15px rgba(12, 211, 12, 0.911); /* Sombra */
 }
 
+/* Estilo para el ícono de redes sociales al pasar el ratón por encima */
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: blue; /* Color del texto */
+  box-shadow: 0 0 5px blue; /* Sombra */
+  text-shadow: 0 0 2px blue; /* Sombra del texto */
 }
 
+/* Estilo para los elementos con la clase .social-icons */
 .social-icons {
-  display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+  display: inline-block !important; /* Muestra en línea como bloque */
+  padding-right: 15px; /* Relleno derecho */
+  padding-left: 15px; /* Relleno izquierdo */
 }
 
+/* Estilo para los íconos con la clase .icon-colour */
 .icon-colour {
-  color: #700c86 !important;
+  color: blue !important; /* Color del texto */
 }
+
 
 /* --------- */
 /* Footer */
 /* --------- */
+
+/* Estilo para el pie de página */
 .footer {
-  background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  background-color: #06022b; /* Color de fondo */
+  bottom: 0 !important; /* Posición inferior */
+  padding-top: 10px !important; /* Relleno superior */
+  padding-bottom: 8px !important; /* Relleno inferior */
 }
+
+/* Estilo para el texto de derechos de autor en el pie de página */
 .footer-copywright {
-  text-align: center !important;
+  text-align: center !important; /* Alineación centrada */
 }
 
+/* Estilo para el cuerpo del pie de página */
 .footer-body {
-  z-index: 1;
-  text-align: center !important;
+  z-index: 1; /* Índice Z */
+  text-align: center !important; /* Alineación centrada */
 }
 
+/* Estilo responsivo para el pie de página en pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .footer-copywright {
-    text-align: center !important;
+    text-align: center !important; /* Alineación centrada */
   }
 
   .footer-body {
-    text-align: center !important;
+    text-align: center !important; /* Alineación centrada */
   }
 }
 
+/* Estilo para los encabezados en el pie de página */
 .footer h3 {
-  font-size: 1em;
-  color: white !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-}
-.footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-  padding: 0 !important;
+  font-size: 1em; /* Tamaño de la fuente */
+  color: white !important; /* Color del texto */
+  margin-top: 0.5em !important; /* Margen superior */
+  margin-bottom: 0.5em !important; /* Margen inferior */
 }
 
-.blockquote-footer {
-  color: #a588c0 !important;
+/* Estilo para los íconos en el pie de página */
+.footer-icons {
+  margin-top: 0.5em !important; /* Margen superior */
+  margin-bottom: 0.5em !important; /* Margen inferior */
+  padding: 0 !important; /* Sin relleno */
 }
+
+/* Estilo para el texto de citas en el pie de página */
+.blockquote-footer {
+  color: #1dd7dd !important; /* Color del texto */
+}
+
 /* --------- */
 /* Projects */
 /* --------- */
+
+/* Estilo para la sección de proyectos */
 .project-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  position: relative !important; /* Posición relativa */
+  padding-top: 150px !important; /* Relleno superior */
+  padding-bottom: 30px !important; /* Relleno inferior */
+  background-image: var(--section-background-color) !important; /* Imagen de fondo */
 }
 
+/* Estilo para las tarjetas de proyecto */
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  padding-top: 50px !important; /* Relleno superior */
+  padding-bottom: 50px !important; /* Relleno inferior */
+  padding-left: 25px !important; /* Relleno izquierdo */
+  padding-right: 25px !important; /* Relleno derecho */
+  height: auto !important; /* Altura automática */
 }
 
+/* Estilo para la vista de la tarjeta de proyecto */
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  box-shadow: 0 4px 5px 3px blue !important; /* Sombra */
+  color: white !important; /* Color del texto */
+  background-color: transparent !important; /* Fondo transparente */
+  opacity: 0.9 !important; /* Opacidad */
+  transition: all 0.3s ease 0s !important; /* Transición */
+  height: 100% !important; /* Altura completa */
 }
+
+/* Estilo para la tarjeta de proyecto al pasar el ratón por encima */
 .project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  transform: scale(1.02) !important; /* Escala aumentada */
+  overflow: hidden !important; /* Ocultar desbordamiento */
+  box-shadow: 0 4px 4px 5px rgba(12, 211, 12, 0.911) !important; /* Sombra */
 }
 
+/* Estilo para las tarjetas de blog */
 .blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  padding-top: 50px !important; /* Relleno superior */
+  padding-bottom: 50px !important; /* Relleno inferior */
+  padding-left: 25px !important; /* Relleno izquierdo */
+  padding-right: 25px !important; /* Relleno derecho */
+  height: auto !important; /* Altura automática */
 }
 
+/* Estilo para la vista de la tarjeta de blog */
 .blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  background-color: transparent !important; /* Fondo transparente */
+  box-shadow: 0 3px 3px 2px rgba(12, 211, 12, 0.911) !important; /* Sombra */
+  color: white !important; /* Color del texto */
+  transition: all 0.5s ease 0s !important; /* Transición */
+  height: 100% !important; /* Altura completa */
 }
 
+/* Estilo para el enlace del blog */
 .blog-link {
-  color: white !important;
-  text-decoration: none !important;
+  color: white !important; /* Color del texto */
+  text-decoration: none !important; /* Sin subrayado */
 }
 
+/* Estilo para el enlace del blog al pasar el ratón por encima */
 .blog-link:hover {
-  cursor: pointer !important;
+  cursor: pointer !important; /* Cambia el cursor a puntero */
 }
 
+/* Estilo para la tarjeta de blog al pasar el ratón por encima */
 .blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  transform: scale(1.02) !important; /* Escala aumentada */
+  overflow: hidden !important; /* Ocultar desbordamiento */
+  box-shadow: 0 3px 3px 5px rgba(12, 211, 12, 0.911) !important; /* Sombra */
 }
 
+/* Estilo para la imagen en la parte superior de la tarjeta */
 .card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
+  padding: 20px !important; /* Relleno */
+  opacity: 0.8 !important; /* Opacidad */
+  border-radius: 10px !important; /* Bordes redondeados */
 }
 
+/* Estilo para la imagen del blog */
 .blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
+  padding: 0px !important; /* Sin relleno */
+  opacity: 0.8 !important; /* Opacidad */
+  border-radius: 0px !important; /* Sin bordes redondeados */
 }
 
+/* Estilo para el botón principal */
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: #fff !important; /* Color del texto */
+  background-color: blue !important; /* Color de fondo */
+  border-color: blue !important; /* Color del borde */
 }
 
+/* Estilo para el botón principal al pasar el ratón por encima */
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  color: #fff !important; /* Color del texto */
+  background-color: rgba(12, 211, 12, 0.911) !important; /* Color de fondo */
+  border-color: rgba(12, 211, 12, 0.911) !important; /* Color del borde */
 }
+
+/* Estilo para el botón al estar enfocado */
 .btn:focus {
-  outline: none !important;
-  box-shadow: none !important;
+  outline: none !important; /* Sin contorno */
+  box-shadow: none !important; /* Sin sombra */
 }
+
+/* Estilo para el encabezado de la sección de proyectos */
 .project-heading {
-  color: white !important;
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
+  color: white !important; /* Color del texto */
+  font-size: 2.3em !important; /* Tamaño de la fuente */
+  font-weight: 500 !important; /* Grosor de la fuente */
+  padding-top: 10px !important; /* Relleno superior */
 }
+
 
 /* --------- */
 /* About */
 /* --------- */
 
+/* Estilo para la sección "About" */
 .about-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  position: relative !important; /* Posición relativa */
+  padding-top: 150px !important; /* Relleno superior */
+  padding-bottom: 30px !important; /* Relleno inferior */
+  background-image: var(--section-background-color) !important; /* Imagen de fondo */
+  color: white !important; /* Color del texto */
 }
 
+/* Estilo para los íconos tecnológicos */
 .tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-  overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  font-size: 4.5em !important; /* Tamaño de la fuente */
+  margin: 15px !important; /* Margen */
+  padding: 10px !important; /* Relleno */
+  opacity: 0.93 !important; /* Opacidad */
+  border: 2px solid blue !important; /* Borde */
+  vertical-align: middle !important; /* Alineación vertical */
+  text-align: center !important; /* Alineación centrada */
+  border-radius: 5px !important; /* Bordes redondeados */
+  display: table !important; /* Display en tabla */
+  box-shadow: 4px 5px 4px 3px blue !important; /* Sombra */
+  overflow: hidden !important; /* Ocultar desbordamiento */
+  transition: all 0.3s ease 0s !important; /* Transición */
 }
 
+/* Estilo responsivo para los íconos tecnológicos en pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .tech-icons {
-    margin: 10px !important;
+    margin: 10px !important; /* Margen */
   }
 }
 
+/* Estilo para los íconos tecnológicos al pasar el ratón por encima */
 .tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  transform: scale(1.05) !important; /* Escala aumentada */
+  overflow: hidden !important; /* Ocultar desbordamiento */
+  border: 2.2px solid rgba(12, 211, 12, 0.911) !important; /* Borde */
+  box-shadow: 4px 5px 4px 3px rgba(12, 211, 12, 0.911) !important; /* Cambio de color de la sombra */
 }
+
+
+/* Estilo para las imágenes de los íconos tecnológicos */
 .tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+  padding: 20px !important; /* Relleno */
+  line-height: 1.6 !important; /* Altura de línea */
 }
 
+/* Estilo para la vista de la tarjeta de citas */
 .quote-card-view {
-  border: none !important;
-  color: white !important;
-  background-color: transparent !important;
+  border: none !important; /* Sin borde */
+  color: white !important; /* Color del texto */
+  background-color: transparent !important; /* Fondo transparente */
 }
 
+/* Estilo para la lista de actividades "About" */
 .about-activity {
-  list-style: none !important;
-  text-align: left !important;
-  padding-left: 1px !important;
+  list-style: none !important; /* Sin estilo de lista */
+  text-align: left !important; /* Alineación a la izquierda */
+  padding-left: 1px !important; /* Relleno izquierdo */
 }
 
+/* Estilo responsivo para la imagen "About" en pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .about-img {
-    padding-top: 0 !important;
+    padding-top: 0 !important; /* Sin relleno superior */
   }
 }
+
 /* --------- */
 /* Resume */
 /* --------- */
 
+/* Estilo para la sección "Resume" */
 .resume-section {
-  position: relative !important;
-  padding-top: 110px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  position: relative !important; /* Posición relativa */
+  padding-top: 110px !important; /* Relleno superior */
+  padding-bottom: 30px !important; /* Relleno inferior */
+  background-image: var(--section-background-color) !important; /* Imagen de fondo */
+  color: white !important; /* Color del texto */
 }
 
+/* Estilo para el contenido del "Resume" */
 .resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  justify-content: center;
+  padding-top: 50px; /* Relleno superior */
+  padding-bottom: 50px; /* Relleno inferior */
+  justify-content: center; /* Alineación centrada */
 }
 
+/* Estilo para la parte izquierda del "Resume" */
 .resume-left {
-  padding-right: 80px !important;
+  padding-right: 80px !important; /* Relleno derecho */
 }
 
+/* Estilo para la parte derecha del "Resume" */
 .resume-right {
-  padding-left: 80px !important;
+  padding-left: 80px !important; /* Relleno izquierdo */
 }
 
+/* Estilo responsivo para el "Resume" en pantallas pequeñas (máximo 767px de ancho) */
 @media (max-width: 767px) {
   .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+    padding-right: 15px !important; /* Relleno derecho */
+    padding-left: 15px !important; /* Relleno izquierdo */
   }
 
   .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+    padding-right: 15px !important; /* Relleno derecho */
+    padding-left: 15px !important; /* Relleno izquierdo */
   }
 }
+
+/* Estilo para el título del "Resume" */
 .resume .resume-title {
-  font-size: 2em;
-  font-weight: 700;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  font-size: 2em; /* Tamaño de la fuente */
+  font-weight: 700; /* Grosor de la fuente */
+  padding-top: 30px; /* Relleno superior */
+  padding-bottom: 30px; /* Relleno inferior */
 }
 
+/* Estilo para los elementos del "Resume" */
 .resume .resume-item {
-  padding: 0 0 10px 25px;
-  margin-top: -2px;
-  border-left: 2px solid green;
-  position: relative;
+  padding: 0 0 10px 25px; /* Relleno */
+  margin-top: -2px; /* Margen superior negativo */
+  border-left: 2px solid rgba(12, 211, 12, 0.911); /* Borde izquierdo */
+  position: relative; /* Posición relativa */
 }
-
+/* Estilo para el título del elemento "Resume" */
 .resume .resume-item .resume-title {
-  line-height: 18px;
-  font-size: 0.9em;
-  background: yellow;
-  padding: 8px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
+  line-height: 18px; /* Altura de línea */
+  font-size: 0.9em; /* Tamaño de la fuente */
+  background: blue; /* Fondo */
+  padding: 8px 15px; /* Relleno */
+  display: inline-block; /* Mostrar en línea */
+  font-weight: 600; /* Grosor de la fuente */
+  margin-bottom: 10px; /* Margen inferior */
 }
 
+/* Estilo para la lista dentro del elemento "Resume" */
 .resume .resume-item ul {
-  padding-left: 20px;
-  text-align: justify;
+  padding-left: 20px; /* Relleno izquierdo */
+  text-align: justify; /* Alineación justificada */
 }
 
+/* Estilo para los elementos de la lista dentro del "Resume" */
 .resume .resume-item ul li {
-  padding-bottom: 10px;
-  list-style: none;
+  padding-bottom: 10px; /* Relleno inferior */
+  list-style: none; /* Sin estilo de lista */
 }
 
+/* Estilo para el último elemento del "Resume" */
 .resume .resume-item:last-child {
-  padding-bottom: 0;
+  padding-bottom: 0; /* Sin relleno inferior */
 }
 
+/* Estilo para el pseudo-elemento ::before del elemento "Resume" */
 .resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid green;
+  content: ""; /* Contenido vacío */
+  position: absolute; /* Posición absoluta */
+  width: 16px; /* Ancho */
+  height: 16px; /* Alto */
+  border-radius: 50px; /* Bordes redondeados */
+  left: -9px; /* Posición izquierda */
+  top: 0; /* Posición superior */
+  background: #fff; /* Fondo blanco */
+  border: 2px solid rgba(12, 211, 12, 0.911); /* Borde verde */
 }
 
+/* Estilo para el elemento "like-item" */
 .like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-  font-family: sans-serif !important;
+  padding-top: 10px !important; /* Relleno superior */
+  font-size: 1.1em !important; /* Tamaño de la fuente */
+  font-family: sans-serif !important; /* Fuente */
 }
 
+/* Estilo para el botón "like-btn" */
 .like-btn {
-  background-color: blue !important;
-  border-color: blue !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
+  background-color: blue !important; /* Color de fondo */
+  border-color: blue !important; /* Color del borde */
+  padding: 0.25rem 0.98rem !important; /* Relleno */
+  border-radius: 5px !important; /* Bordes redondeados */
+  line-height: 1.4 !important; /* Altura de línea */
+  transition: 0.3s ease !important; /* Transición */
 }
 
+/* Estilo para el botón "like-btn" al pasar el ratón por encima */
 .like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: mediumorchid !important;
-  border-color: mediumorchid !important;
+  transform: translateY(-2px) !important; /* Transformación en el eje Y */
+  background-color: rgba(12, 211, 12, 0.911) !important; /* Color de fondo */
+  border-color: rgba(12, 211, 12, 0.911) !important; /* Color del borde */
 }
 
+/* Estilo para la animación "like" */
 .animate-like {
-  animation-name: likeAnimation;
-  animation-fill-mode: forwards;
-  animation-duration: 0.85s;
+  animation-name: likeAnimation; /* Nombre de la animación */
+  animation-fill-mode: forwards; /* Modo de relleno */
+  animation-duration: 0.85s; /* Duración */
 }
+
+/* Keyframes para la animación "like" */
 @keyframes likeAnimation {
   0% {
-    transform: scale(1.5);
+    transform: scale(1.5); /* Escala inicial */
   }
   100% {
-    transform: scale(1);
+    transform: scale(1); /* Escala final */
   }
 }
 
+/* Estilo para el botón "fork-btn" */
 .fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
+  font-size: 1.1em !important; /* Tamaño de la fuente */
+  padding-top: 10px !important; /* Relleno superior */
 }
 
+/* Estilo para el contenido interno del botón "fork-btn-inner" */
 .fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: blue !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
+  line-height: 1.4em !important; /* Altura de línea */
+  background-color: blue !important; /* Color de fondo */
+  padding: 0.25rem 1.1rem !important; /* Relleno */
+  vertical-align: middle !important; /* Alineación vertical */
+  text-align: center !important; /* Alineación centrada */
 }
 
+/* Estilo para el contenido interno del botón "fork-btn-inner" al pasar el ratón por encima */
 .fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: mediumorchid !important;
-  border-color: mediumorchid !important;
+  transform: translateY(-2px) !important; /* Transformación en el eje Y */
+  background-color: rgba(12, 211, 12, 0.911) !important; /* Color de fondo */
+  border-color: rgba(12, 211, 12, 0.911) !important; /* Color del borde */
 }
+
+/* Ocultar el pseudo-elemento ::after del botón "fork-btn-inner" */
 .fork-btn-inner::after {
-  display: none !important;
+  display: none !important; /* No mostrar */
 }
