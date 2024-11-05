@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/NavBar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo from "../Assets/logo.png";
 import { Link } from "react-router-dom";
 import {
