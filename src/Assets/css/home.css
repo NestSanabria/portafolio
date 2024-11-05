@@ -1,0 +1,221 @@
+
+/* --------- */
+/* Home section */
+/* --------- */
+
+/* Estilo para el elemento con la clase .wave */
+.wave {
+animation-name: wave-animation; /* Nombre de la animación definida abajo con @keyframes */
+animation-duration: 2.1s; /* Duración de la animación */
+animation-iteration-count: infinite; /* La animación se repite indefinidamente */
+transform-origin: 70% 70%; /* Punto de origen de la transformación */
+display: inline-block; /* Muestra el elemento en línea como un bloque */
+}
+
+/* Definición de la animación wave-animation */
+@keyframes wave-animation {
+0% {transform: rotate(0deg);}
+
+10% {transform: rotate(14deg);} /* El siguiente grupo de valores se puede ajustar para cambiar la intensidad del movimiento */
+
+20% {transform: rotate(-8deg);}
+
+30% {transform: rotate(14deg);}
+
+40% {transform: rotate(-4deg);}
+
+50% {transform: rotate(10deg);}
+
+60% {transform: rotate(0deg);} /* Reinicia para la segunda mitad de la animación */
+
+100% {transform: rotate(0deg);}
+}
+
+/* Estilo para el elemento con el id #tsparticles */
+#tsparticles {
+position: fixed !important; /* Posición fija */
+background-repeat: no-repeat !important; /* Sin repetición de fondo */
+background-size: cover !important; /* El fondo cubre todo el contenedor */
+width: 100%; /* Ancho completo */
+height: 100%; /* Altura completa */
+}
+
+/* Estilo para el encabezado de la sección de inicio */
+.home-header {
+padding-top: 80px !important; /* Relleno superior */
+}
+
+.home-section {
+position: relative;
+z-index: -1;
+background-image: var(--image-gradient), url('../fondo.jpeg');
+background-position: center; /* Ajusta la posición de la imagen de fondo al centro */
+background-repeat: no-repeat;
+background-size: 100% auto; /* Ancho al 100% y altura automática */
+padding-bottom: 30px !important;
+padding-top: 30px !important;
+}
+
+body {
+background-image: url('../fondo.jpeg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/* Estilo para el contenido de la sección de inicio */
+.home-content {
+padding: 9rem 0 2rem !important; /* Relleno superior e inferior */
+color: whitesmoke; /* Color del texto */
+text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo para el encabezado */
+.heading {
+font-size: 2.4em !important; /* Tamaño de la fuente */
+padding-left: 50px !important; /* Relleno izquierdo */
+}
+
+/* Estilo para el nombre en el encabezado */
+.heading-name {
+font-size: 2.5em !important; /* Tamaño de la fuente */
+padding-left: 45px !important; /* Relleno izquierdo */
+}
+
+/* Estilo para el nombre principal */
+.main-name {
+color: blue; /* Color del texto */
+}
+
+/* Estilo para el wrapper del Typewriter */
+.Typewriter__wrapper {
+font-size: 2.2em !important; /* Tamaño de la fuente */
+color: blue !important; /* Color del texto */
+font-weight: 600 !important; /* Grosor de la fuente */
+}
+
+/* Estilo para el cursor del Typewriter */
+.Typewriter__cursor {
+font-size: 2.4em !important; /* Tamaño de la fuente */
+color: blue !important; /* Color del cursor */
+}
+
+/* Estilo responsivo para pantallas pequeñas (máximo 767px de ancho) */
+@media (max-width: 767px) {
+.Typewriter__wrapper {
+    font-size: 1.4em !important; /* Tamaño de la fuente */
+    font-weight: 500 !important; /* Grosor de la fuente */
+    position: absolute !important; /* Posición absoluta */
+}
+.Typewriter__cursor {
+    display: none !important; /* Oculta el cursor */
+}
+}
+
+/* Estilo para el elemento con la clase .myAvtar */
+.myAvtar {
+justify-content: center !important; /* Justificación centrada */
+padding-top: 9em !important; /* Relleno superior */
+}
+
+/* Estilo responsivo para .myAvtar en pantallas pequeñas (máximo 767px de ancho) */
+@media (max-width: 767px) {
+.myAvtar {
+    padding-top: 2em !important; /* Relleno superior reducido */
+    padding-bottom: 2em !important; /* Relleno inferior */
+}
+}
+
+/* Estilo para la sección sobre el inicio */
+.home-about-section {
+position: relative; /* Posición relativa */
+padding-bottom: 70px !important; /* Relleno inferior */
+padding-top: 70px !important; /* Relleno superior */
+}
+
+/* Estilo para la descripción de la sección sobre el inicio */
+.home-about-description {
+color: white !important; /* Color del texto */
+padding-top: 100px !important; /* Relleno superior */
+padding-bottom: 20px !important; /* Relleno inferior */
+text-align: center; /* Alineación centrada del texto */
+}
+
+/* Estilo para el cuerpo de la sección sobre el inicio */
+.home-about-body {
+padding-top: 50px; /* Relleno superior */
+font-size: 1.2em !important; /* Tamaño de la fuente */
+text-align: left; /* Alineación del texto a la izquierda */
+text-align: justify; /* Texto justificado */
+}
+
+/* Estilo para la sección de redes sociales de la sección sobre el inicio */
+.home-about-social {
+text-align: center !important; /* Alineación centrada */
+padding-top: 25px; /* Relleno superior */
+color: white !important; /* Color del texto */
+}
+
+/* Estilo para los enlaces de redes sociales en la sección sobre el inicio */
+.home-about-social-links {
+justify-content: center !important; /* Justificación centrada */
+padding-top: 15px !important; /* Relleno superior */
+display: inline-block !important; /* Muestra en línea como bloque */
+position: relative !important; /* Posición relativa */
+padding-inline-start: 0 !important; /* Sin relleno de inicio de línea */
+}
+
+/* Estilo para los íconos de redes sociales */
+.home-social-icons {
+position: relative !important; /* Posición relativa */
+display: inline-block !important; /* Muestra en línea como bloque */
+width: 40px !important; /* Ancho */
+height: 40px !important; /* Altura */
+text-align: center !important; /* Alineación centrada del texto */
+font-size: 1.2em !important; /* Tamaño de la fuente */
+line-height: 2em !important; /* Altura de la línea */
+background: rgba(255, 255, 255, 0.972) !important; /* Color de fondo */
+border-radius: 50% !important; /* Bordes redondeados */
+transition: 0.5s !important; /* Transición */
+}
+
+/* Estilo para el pseudo-elemento antes del ícono de redes sociales */
+.home-social-icons::before {
+content: ""; /* Contenido vacío */
+position: absolute; /* Posición absoluta */
+top: 0; /* Alineación superior */
+left: 0; /* Alineación izquierda */
+width: 100%; /* Ancho completo */
+height: 100%; /* Altura completa */
+border-radius: 50%; /* Bordes redondeados */
+background: rgba(12, 211, 12, 0.911); /* Color de fondo */
+transition: 0.5s; /* Transición */
+transform: scale(0.9); /* Escala inicial */
+z-index: -1; /* Índice Z negativo */
+}
+
+/* Estilo para el pseudo-elemento antes del ícono de redes sociales al pasar el ratón por encima */
+.home-social-icons:hover::before {
+transform: scale(1.1); /* Escala aumentada */
+box-shadow: 0 0 15px rgba(12, 211, 12, 0.911); /* Sombra */
+}
+
+/* Estilo para el ícono de redes sociales al pasar el ratón por encima */
+.home-social-icons:hover {
+color: blue; /* Color del texto */
+box-shadow: 0 0 5px blue; /* Sombra */
+text-shadow: 0 0 2px blue; /* Sombra del texto */
+}
+
+/* Estilo para los elementos con la clase .social-icons */
+.social-icons {
+display: inline-block !important; /* Muestra en línea como bloque */
+padding-right: 15px; /* Relleno derecho */
+padding-left: 15px; /* Relleno izquierdo */
+}
+
+/* Estilo para los íconos con la clase .icon-colour */
+.icon-colour {
+color: blue !important; /* Color del texto */
+}
+

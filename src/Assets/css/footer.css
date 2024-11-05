@@ -1,0 +1,73 @@
+
+/* --------- */
+/* Footer */
+/* --------- */
+
+/* Estilo para el pie de página */
+.footer {
+background-color: #06022b; /* Color de fondo */
+bottom: 0 !important; /* Posición inferior */
+padding-top: 10px !important; /* Relleno superior */
+padding-bottom: 8px !important; /* Relleno inferior */
+}
+
+/* Estilo para el texto de derechos de autor en el pie de página */
+.footer-copywright {
+text-align: center !important; /* Alineación centrada */
+display: flex; /* Usar Flexbox */
+justify-content: center; /* Centrar horizontalmente */
+align-items: center; /* Centrar verticalmente */
+h3 {
+    margin: 0; /* Eliminar márgenes para que esté centrado */
+}
+}
+
+/* Estilo para el cuerpo del pie de página */
+.footer-body {
+z-index: 1; /* Índice Z */
+text-align: center !important; /* Alineación centrada */
+}
+
+
+.footer-icons svg:hover {
+transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
+/* Estilo para los encabezados en el pie de página */
+.footer h3 {
+font-size: 1em; /* Tamaño de la fuente */
+color: white !important; /* Color del texto */
+margin-top: 0.5em !important; /* Margen superior */
+margin-bottom: 0.5em !important; /* Margen inferior */
+}
+
+/* Estilo para los íconos en el pie de página */
+.footer-icons {
+margin-top: 0.5em !important; /* Margen superior */
+margin-bottom: 0.5em !important; /* Margen inferior */
+padding: 0 !important; /* Sin relleno */
+font-size: 30px; /* Cambia el tamaño aquí */
+transition: transform 0.2s; /* Agrega un efecto al pasar el mouse */
+}
+
+/* Estilo para los íconos en el pie de página */
+.footer-icons .social-icons {
+display: inline-block; /* Asegúrate de que los íconos estén alineados horizontalmente */
+margin: 0 10px; /* Espaciado entre los íconos */
+}
+
+/* Estilo para el texto de citas en el pie de página */
+.blockquote-footer {
+color: #1dd7dd !important; /* Color del texto */
+}
+
+/* Estilo responsivo para el pie de página en pantallas pequeñas (máximo 767px de ancho) */
+@media (max-width: 767px) {
+.footer-copywright {
+    text-align: center !important; /* Alineación centrada */
+}
+
+.footer-body {
+    text-align: center !important; /* Alineación centrada */
+}
+}

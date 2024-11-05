@@ -1,0 +1,29 @@
+
+/* --------- */
+/*  Preloader */
+/* --------- */
+
+/* Estilo para el preloader, que cubre toda la pantalla */
+#preloader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 999999; /* Asegura que el preloader esté por encima de otros elementos */
+background-color: #06022b;
+background-image: url(../preloader.svg); /* Imagen del preloader */
+background-repeat: no-repeat;
+background-position: center; /* Centra la imagen del preloader */
+}
+
+/* Estilo para ocultar el preloader */
+#preloader-none {
+opacity: 0;
+}
+
+/* Estilo para desactivar el scroll */
+#no-scroll {
+overflow: hidden;
+height: 100vh; /* Asegura que la página no se desplace */
+}

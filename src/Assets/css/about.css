@@ -1,0 +1,73 @@
+
+/* --------- */
+/* About */
+/* --------- */
+
+/* Estilo para la sección "About" */
+.about-section {
+position: relative !important; /* Posición relativa */
+padding-top: 150px !important; /* Relleno superior */
+padding-bottom: 30px !important; /* Relleno inferior */
+background-image: var(--section-background-color) !important; /* Imagen de fondo */
+color: white !important; /* Color del texto */
+}
+
+/* Estilo para los íconos tecnológicos */
+.tech-icons {
+font-size: 4.5em !important; /* Tamaño de la fuente */
+margin: 15px !important; /* Margen */
+padding: 10px !important; /* Relleno */
+opacity: 0.93 !important; /* Opacidad */
+border: 2px solid blue !important; /* Borde */
+vertical-align: middle !important; /* Alineación vertical */
+text-align: center !important; /* Alineación centrada */
+border-radius: 5px !important; /* Bordes redondeados */
+display: table !important; /* Display en tabla */
+box-shadow: 4px 5px 4px 3px blue !important; /* Sombra */
+overflow: hidden !important; /* Ocultar desbordamiento */
+transition: all 0.3s ease 0s !important; /* Transición */
+}
+
+/* Estilo responsivo para los íconos tecnológicos en pantallas pequeñas (máximo 767px de ancho) */
+@media (max-width: 767px) {
+.tech-icons {
+    margin: 10px !important; /* Margen */
+}
+}
+
+/* Estilo para los íconos tecnológicos al pasar el ratón por encima */
+.tech-icons:hover {
+transform: scale(1.05) !important; /* Escala aumentada */
+overflow: hidden !important; /* Ocultar desbordamiento */
+border: 2.2px solid rgba(12, 211, 12, 0.911) !important; /* Borde */
+box-shadow: 4px 5px 4px 3px rgba(12, 211, 12, 0.911) !important; /* Cambio de color de la sombra */
+}
+
+
+/* Estilo para las imágenes de los íconos tecnológicos */
+.tech-icon-images {
+padding: 20px !important; /* Relleno */
+line-height: 1.6 !important; /* Altura de línea */
+}
+
+/* Estilo para la vista de la tarjeta de citas */
+.quote-card-view {
+border: none !important; /* Sin borde */
+color: white !important; /* Color del texto */
+background-color: transparent !important; /* Fondo transparente */
+}
+
+/* Estilo para la lista de actividades "About" */
+.about-activity {
+list-style: none !important; /* Sin estilo de lista */
+text-align: left !important; /* Alineación a la izquierda */
+padding-left: 1px !important; /* Relleno izquierdo */
+}
+
+/* Estilo responsivo para la imagen "About" en pantallas pequeñas (máximo 767px de ancho) */
+@media (max-width: 767px) {
+.about-img {
+    padding-top: 0 !important; /* Sin relleno superior */
+}
+}
+

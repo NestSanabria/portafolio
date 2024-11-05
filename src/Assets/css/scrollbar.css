@@ -1,0 +1,26 @@
+
+/* --------- */
+/* Scrollbar  */
+/* --------- */
+
+/* Estilo para la barra de desplazamiento en navegadores Webkit */
+::-webkit-scrollbar {
+width: 7px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+background: #06022b;
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+background: blue; /* Color del "thumb" */
+border-radius: 12px; /* Bordes redondeados */
+}
+
+/* Estilo para el "thumb" de la barra de desplazamiento al pasar el ratón por encima */
+::-webkit-scrollbar-thumb:hover {
+background: rgba(12, 211, 12, 0.911); /* Color del "thumb" al pasar el ratón */
+border-radius: 12px;
+}

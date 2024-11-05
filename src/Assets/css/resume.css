@@ -1,0 +1,136 @@
+
+
+/* --------- */
+/* Resume */
+/* --------- */
+
+/* Estilo para la sección "Resume" */
+.resume-section {
+position: relative !important; /* Posición relativa */
+padding-top: 110px !important; /* Relleno superior */
+padding-bottom: 30px !important; /* Relleno inferior */
+background-image: var(--section-background-color) !important; /* Imagen de fondo */
+color: white !important; /* Color del texto */
+}
+
+/* Estilo para el contenido del "Resume" */
+.resume {
+padding-top: 50px; /* Relleno superior */
+padding-bottom: 50px; /* Relleno inferior */
+justify-content: center; /* Alineación centrada */
+}
+
+/* Estilo para la parte izquierda del "Resume" */
+.resume-left {
+padding-right: 80px !important; /* Relleno derecho */
+}
+
+/* Estilo para la parte derecha del "Resume" */
+.resume-right {
+padding-left: 80px !important; /* Relleno izquierdo */
+}
+
+/* Estilo responsivo para el "Resume" en pantallas pequeñas (máximo 767px de ancho) */
+@media (max-width: 767px) {
+.resume-left {
+    padding-right: 15px !important; /* Relleno derecho */
+    padding-left: 15px !important; /* Relleno izquierdo */
+}
+
+.resume-right {
+    padding-right: 15px !important; /* Relleno derecho */
+    padding-left: 15px !important; /* Relleno izquierdo */
+}
+}
+
+/* Estilo para el título del "Resume" */
+.resume .resume-title {
+font-size: 2em; /* Tamaño de la fuente */
+font-weight: 700; /* Grosor de la fuente */
+padding-top: 30px; /* Relleno superior */
+padding-bottom: 30px; /* Relleno inferior */
+}
+
+/* Estilo para los elementos del "Resume" */
+.resume .resume-item {
+padding: 0 0 10px 25px; /* Relleno */
+margin-top: -2px; /* Margen superior negativo */
+border-left: 2px solid rgba(12, 211, 12, 0.911); /* Borde izquierdo */
+position: relative; /* Posición relativa */
+}
+/* Estilo para el título del elemento "Resume" */
+.resume .resume-item .resume-title {
+line-height: 18px; /* Altura de línea */
+font-size: 0.9em; /* Tamaño de la fuente */
+background: blue; /* Fondo */
+padding: 8px 15px; /* Relleno */
+display: inline-block; /* Mostrar en línea */
+font-weight: 600; /* Grosor de la fuente */
+margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para la lista dentro del elemento "Resume" */
+.resume .resume-item ul {
+padding-left: 20px; /* Relleno izquierdo */
+text-align: justify; /* Alineación justificada */
+}
+
+/* Estilo para los elementos de la lista dentro del "Resume" */
+.resume .resume-item ul li {
+padding-bottom: 10px; /* Relleno inferior */
+list-style: none; /* Sin estilo de lista */
+}
+
+/* Estilo para el último elemento del "Resume" */
+.resume .resume-item:last-child {
+padding-bottom: 0; /* Sin relleno inferior */
+}
+
+/* Estilo para el pseudo-elemento ::before del elemento "Resume" */
+.resume .resume-item::before {
+content: ""; /* Contenido vacío */
+position: absolute; /* Posición absoluta */
+width: 16px; /* Ancho */
+height: 16px; /* Alto */
+border-radius: 50px; /* Bordes redondeados */
+left: -9px; /* Posición izquierda */
+top: 0; /* Posición superior */
+background: #fff; /* Fondo blanco */
+border: 2px solid rgba(12, 211, 12, 0.911); /* Borde verde */
+}
+
+
+/* Estilo para el botón "fork-btn" */
+.fork-btn {
+font-size: 1.1em !important; /* Tamaño de la fuente */
+padding-top: 10px !important; /* Relleno superior */
+}
+
+/* Estilo para el contenido interno del botón "fork-btn-inner" */
+.fork-btn-inner {
+line-height: 1.4em !important; /* Altura de línea */
+background-color: blue !important; /* Color de fondo */
+padding: 0.25rem 1.1rem !important; /* Relleno */
+vertical-align: middle !important; /* Alineación vertical */
+text-align: center !important; /* Alineación centrada */
+}
+
+/* Estilo para el contenido interno del botón "fork-btn-inner" al pasar el ratón por encima */
+.fork-btn-inner:hover {
+transform: translateY(-2px) !important; /* Transformación en el eje Y */
+background-color: rgba(12, 211, 12, 0.911) !important; /* Color de fondo */
+border-color: rgba(12, 211, 12, 0.911) !important; /* Color del borde */
+}
+
+/* Ocultar el pseudo-elemento ::after del botón "fork-btn-inner" */
+.fork-btn-inner::after {
+display: none !important; /* No mostrar */
+}
+
+
+
+
+
+
+
+  

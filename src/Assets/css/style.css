@@ -1,0 +1,29 @@
+/* Definición de variables CSS para colores y gradientes en el elemento <html> */
+html {
+  /* Color de fondo para secciones, usando un gradiente lineal */
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  /* Gradiente para imágenes */
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  /* Color importante para el texto */
+  --imp-text-color: blue;
+}
+
+/* Estilo para elementos con la clase .color-text, utilizando la variable de color de texto importante */
+.color-text {
+  color: var(--imp-text-color) !important;
+}
+
+/* Estilo para botones en estado de foco, eliminando la sombra */
+button:focus {
+  box-shadow: none !important;
+}

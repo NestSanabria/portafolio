@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Portafolio Web de [Tu Nombre]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Hola! Soy Néstor Sanabria, **Ingeniero Electrónico** con énfasis en **Desarrollo Web**. Me apasiona crear soluciones digitales utilizando tecnologías modernas. Este es mi portafolio personal donde podrás ver algunos de los proyectos en los que he trabajado y conocer más sobre mi experiencia en el desarrollo web, especialmente con **React** y **Node.js**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Índice
 
-### `npm start`
+- [Descripción](#descripción)
+- [Características](#características)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Instalación](#instalación)
+- [Visita el sitio](#visita-el-sitio)
+- [Licencia](#licencia)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Descripción
 
-### `npm test`
+Este es mi portafolio personal en línea, diseñado para mostrar mis habilidades y proyectos en el área de desarrollo web. El sitio tiene un diseño responsivo y está construido con tecnologías modernas para asegurar una experiencia de usuario atractiva y fluida.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+En este portafolio, los visitantes pueden conocer mis principales proyectos, mis áreas de interés profesional y cómo puedo aportar soluciones a problemas mediante el desarrollo web.
 
-### `npm run build`
+Además, dado mi trasfondo en ingeniería electrónica, también tengo un enfoque técnico y analítico en la resolución de problemas, lo que me permite aplicar principios de ingeniería al desarrollo de aplicaciones web de alto rendimiento.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Características
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Diseño responsivo**: Optimizado para verse correctamente en dispositivos de escritorio, tabletas y móviles.
+- **Sobre mí**: Una breve introducción sobre mi formación, mi enfoque en el desarrollo web y mis intereses profesionales.
+- **Proyectos destacados**: Muestra los proyectos más relevantes en los que he trabajado, con descripciones, tecnologías utilizadas y enlaces a sus versiones en vivo o repositorios.
+- **Currículum Vitae**: Para que los visitantes puedan acceder a mi currículum directamente y descargarlo.
+- **Tecnologías modernas**: Uso de animaciones suaves y transiciones que mejoran la experiencia de navegación.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tecnologías utilizadas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Este portafolio web fue desarrollado utilizando las siguientes tecnologías:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tecnologías utilizadas
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Este portafolio web fue desarrollado utilizando las siguientes tecnologías y herramientas:
 
-## Learn More
+- **Frontend**:
+  - **React**: Framework de JavaScript utilizado para construir la interfaz de usuario interactiva y dinámica.
+  - **React Router DOM**: Para la navegación entre secciones de la página sin recargarla.
+  - **React Bootstrap**: Framework CSS basado en Bootstrap para construir componentes UI responsivos.
+  - **React Icons**: Librería de iconos para agregar iconos SVG fácilmente en el proyecto.
+  - **React PDF** y **React PDF Renderer**: Para generar y mostrar archivos PDF dentro de la aplicación.
+  - **React Typed**: Para crear efectos de texto animado en las secciones del portafolio.
+  - **React Parallax Tilt**: Para agregar efectos de parallax en los elementos del sitio.
+  - **React On Screen**: Para ejecutar acciones cuando los elementos se encuentran visibles en la pantalla (ideal para animaciones basadas en scroll).
+  - **React TSParticles**: Librería para crear efectos visuales interactivos de partículas.
+  - **Bootstrap 5**: Framework CSS para un diseño responsive y estilizado rápido.
+  
+- **Otras librerías**:
+  - **Axios**: Librería para realizar solicitudes HTTP (por ejemplo, para enviar el formulario de contacto o cargar datos desde un servidor).
+  - **PDF**: Para manejo de PDFs dentro del proyecto.
+  
+- **Desarrollo**:
+  - **React Scripts**: Utilizado para el bundling y configuración de Webpack en el proyecto de React.
+  - **ESLint**: Configuración de linting para mantener un código limpio y evitar errores comunes.
+  - **Babel**: Para la transpilación de código moderno de JavaScript.
+  
+- **Otros**:
+  - **Web Vitals**: Para medir y optimizar el rendimiento del sitio.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

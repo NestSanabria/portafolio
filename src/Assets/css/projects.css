@@ -1,0 +1,121 @@
+
+/* --------- */
+/* Projects */
+/* --------- */
+
+/* Estilo para la sección de proyectos */
+.project-section {
+position: relative !important; /* Posición relativa */
+padding-top: 150px !important; /* Relleno superior */
+padding-bottom: 30px !important; /* Relleno inferior */
+background-image: var(--section-background-color) !important; /* Imagen de fondo */
+}
+
+/* Estilo para las tarjetas de proyecto */
+.project-card {
+padding: 20px !important; /* Ajusta el relleno según sea necesario */
+margin: 10px !important; /* Agrega margen para separar las tarjetas */
+flex: 1 1 calc(50% - 20px); /* Hace que las tarjetas ocupen el 50% menos el margen */
+}
+
+/* Opcional: Cambia el tamaño máximo para tarjetas grandes */
+@media (min-width: 768px) {
+.project-card {
+    max-width: 600px; /* O el tamaño que prefieras */
+}
+}
+
+/* Estilo para la vista de la tarjeta de proyecto */
+.project-card-view {
+box-shadow: 0 4px 5px 3px blue !important; /* Sombra */
+color: white !important; /* Color del texto */
+background-color: transparent !important; /* Fondo transparente */
+opacity: 0.9 !important; /* Opacidad */
+transition: all 0.3s ease 0s !important; /* Transición */
+height: 100% !important; /* Altura completa */
+}
+
+/* Estilo para la tarjeta de proyecto al pasar el ratón por encima */
+.project-card-view:hover {
+transform: scale(1.02) !important; /* Escala aumentada */
+overflow: hidden !important; /* Ocultar desbordamiento */
+box-shadow: 0 4px 4px 5px rgba(12, 211, 12, 0.911) !important; /* Sombra */
+}
+
+/* Estilo para las tarjetas de blog */
+.blog-card {
+padding-top: 50px !important; /* Relleno superior */
+padding-bottom: 50px !important; /* Relleno inferior */
+padding-left: 25px !important; /* Relleno izquierdo */
+padding-right: 25px !important; /* Relleno derecho */
+height: auto !important; /* Altura automática */
+}
+
+/* Estilo para la vista de la tarjeta de blog */
+.blog-card-view {
+background-color: transparent !important; /* Fondo transparente */
+box-shadow: 0 3px 3px 2px rgba(12, 211, 12, 0.911) !important; /* Sombra */
+color: white !important; /* Color del texto */
+transition: all 0.5s ease 0s !important; /* Transición */
+height: 100% !important; /* Altura completa */
+}
+
+/* Estilo para el enlace del blog */
+.blog-link {
+color: white !important; /* Color del texto */
+text-decoration: none !important; /* Sin subrayado */
+}
+
+/* Estilo para el enlace del blog al pasar el ratón por encima */
+.blog-link:hover {
+cursor: pointer !important; /* Cambia el cursor a puntero */
+}
+
+/* Estilo para la tarjeta de blog al pasar el ratón por encima */
+.blog-card-view:hover {
+transform: scale(1.02) !important; /* Escala aumentada */
+overflow: hidden !important; /* Ocultar desbordamiento */
+box-shadow: 0 3px 3px 5px rgba(12, 211, 12, 0.911) !important; /* Sombra */
+}
+
+/* Estilo para la imagen en la parte superior de la tarjeta */
+.card-img-top {
+padding: 20px !important; /* Relleno */
+opacity: 0.8 !important; /* Opacidad */
+border-radius: 10px !important; /* Bordes redondeados */
+}
+
+/* Estilo para la imagen del blog */
+.blog-img {
+padding: 0px !important; /* Sin relleno */
+opacity: 0.8 !important; /* Opacidad */
+border-radius: 0px !important; /* Sin bordes redondeados */
+}
+
+/* Estilo para el botón principal */
+.btn-primary {
+color: #fff !important; /* Color del texto */
+background-color: blue !important; /* Color de fondo */
+border-color: blue !important; /* Color del borde */
+}
+
+/* Estilo para el botón principal al pasar el ratón por encima */
+.btn-primary:hover {
+color: #fff !important; /* Color del texto */
+background-color: rgba(12, 211, 12, 0.911) !important; /* Color de fondo */
+border-color: rgba(12, 211, 12, 0.911) !important; /* Color del borde */
+}
+
+/* Estilo para el botón al estar enfocado */
+.btn:focus {
+outline: none !important; /* Sin contorno */
+box-shadow: none !important; /* Sin sombra */
+}
+
+/* Estilo para el encabezado de la sección de proyectos */
+.project-heading {
+color: white !important; /* Color del texto */
+font-size: 2.3em !important; /* Tamaño de la fuente */
+font-weight: 500 !important; /* Grosor de la fuente */
+padding-top: 10px !important; /* Relleno superior */
+}
