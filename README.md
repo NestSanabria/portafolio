@@ -37,10 +37,6 @@ Además, dado mi trasfondo en ingeniería electrónica, también tengo un enfoqu
 
 ## Tecnologías utilizadas
 
-Este portafolio web fue desarrollado utilizando las siguientes tecnologías:
-
-## Tecnologías utilizadas
-
 Este portafolio web fue desarrollado utilizando las siguientes tecnologías y herramientas:
 
 - **Frontend**:
