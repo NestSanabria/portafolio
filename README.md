@@ -9,9 +9,6 @@
 - [Descripción](#descripción)
 - [Características](#características)
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
-- [Instalación](#instalación)
-- [Visita el sitio](#visita-el-sitio)
-- [Licencia](#licencia)
 
 ---
 
