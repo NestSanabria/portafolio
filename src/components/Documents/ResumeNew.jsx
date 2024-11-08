@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../../Assets/../Assets/English_Nestor_Sanabria_CV.pdf";
+import pdf from "../../Assets/../Assets/FullStack_Nestor_Sanabria_CV.pdf";
 
 // Define el componente funcional ResumeNew.
 function ResumeNew() {
